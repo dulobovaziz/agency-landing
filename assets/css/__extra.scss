@@ -1,0 +1,123 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat-Bold.woff);
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat-Regular.woff);
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat-Bold.woff2);
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat-Regular.woff2);
+}
+
+$primary:#45A6FF;
+$text: #3B4252;
+$family: Montserrat;
+$secondary: #1D2434;
+
+a {
+    text-decoration: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: none;
+    list-style: none;
+    font-family: Montserrat;
+    color: $text;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+body {
+    background: url(../imgs/background.png), #f3f3f3;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+button {
+    cursor: pointer;
+}
+.sidenav {
+    width: 1200px;
+    z-index: -1;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    height: 85px;
+    align-items: center;
+
+    &__menu {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        
+        &__btn {
+            background: transparent;
+            border: none;
+            font-size: 20px;
+        }
+    }
+    &__left {
+        background-size: cover;
+        display: none;
+        width: 100vw;
+        background: $secondary;
+        z-index: 10;
+        height: 100vh;
+
+        &__nav {
+            display: flex;
+            height: 80px;
+            align-items: center;
+            justify-content: space-between;
+
+            &__menu {
+                color: white;
+                display: flex;
+                gap: 13px;
+                align-items: center;
+            }
+            &__btn, &__btn > i {
+                background: transparent;
+                color: white;
+                font-size: 23px;
+                border: none;
+            }
+        }
+        &__hero {
+            margin: 90px 0;
+            &__title {
+                color: $primary;
+                font-size: 58px;
+                font-weight: bold;
+            }
+            &__link {
+                color: white;
+                font-size: 59px;
+                font-weight: bold;
+            }
+            &__subtitles {
+                font-size: 28px;
+                margin: 10px 0;
+                color: white;
+                font-weight: normal;
+            }
+            &__bottom {
+                color: white;
+                font-size: 20px;
+            }
+        }
+    }
+}

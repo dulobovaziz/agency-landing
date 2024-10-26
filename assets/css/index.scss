@@ -1,25 +1,2 @@
-@font-face {
-    font-family: Montserrat;
-    src: url(../fonts/Montserrat-Bold.woff);
-}
-@font-face {
-    font-family: Montserrat;
-    src: url(../fonts/Montserrat-Regular.woff);
-}
-@font-face {
-    font-family: Montserrat;
-    src: url(../fonts/Montserrat-Bold.woff2);
-}
-@font-face {
-    font-family: Montserrat;
-    src: url(../fonts/Montserrat-Regular.woff2);
-}
+@import "./__extra";
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-align: none;
-    list-style: none;
-    font-family: Montserrat;
-}

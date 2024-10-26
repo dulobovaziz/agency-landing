@@ -1,12 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Agency || @AzizbekDulobov</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
 </head>
+
 <body>
-    
+    <header class="header">
+        <div class="container">
+            <nav class="sidenav">
+                <img src="./assets/imgs/logo.png" alt="logo" class="sidenav__logo">
+                <div>
+                    <h3 class="sidenav__menu">
+                        Menu
+                        <button class="sidenav__menu__btn" id="sidenavOpenBtn">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                    </h3>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <aside class="sidenav__left" id="menu">
+        <div class="container">
+            <nav class="sidenav__left__nav">
+                <img src="./assets/imgs/logo-white.png" alt="leftlogo" class="sidenav__left__nav__img">
+                <h3 class="sidenav__left__nav__menu">
+                    Menu
+                    <button class="sidenav__left__nav__btn" id="sidenavCloseBtn">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </h3>
+            </nav>
+            <main class="sidenav__left__hero">
+                <a href="#">
+                    <h1 class="sidenav__left__hero__title">
+                        Портфолио
+                    </h1>
+                </a>
+                <a href="#">
+                    <h1 class="sidenav__left__hero__link">Блог</h1>
+                </a>
+                <a href="#">
+                    <h1 class="sidenav__left__hero__link">О маркетинге</h1>
+                </a>
+                <p class="sidenav__left__hero__subtitles">
+                    Разбор сайта
+                </p>
+                <p class="sidenav__left__hero__subtitles">
+                    Квиз на разработку
+                </p>
+                <p class="sidenav__left__hero__subtitles">
+                    Контакты
+                </p>
+            </main>
+            <p class="sidenav__left__hero__bottom">
+                +7(066) 364 19 19 / info@DidgiKey
+            </p>
+        </div>
+    </aside>
+    <script src="assets/js/app.js"></script>
 </body>
+
 </html>
