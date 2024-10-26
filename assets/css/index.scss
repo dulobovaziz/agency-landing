@@ -1,2 +1,40 @@
 @import "./__extra";
 
+@mixin btn($width,$heigh, $bg, $color, $border, $size, $radius){
+    width: $width;
+    height: $heigh;
+    background: $bg;
+    color: $color;
+    border: $border;
+    font-size: $size;
+    border-radius: $radius;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__info {
+        margin-top: -140px;
+        display: flex;
+        flex-direction: column;
+        gap: 13px;
+
+        &__title {
+            font-size: 58px;
+            font-weight: bold;
+        }
+        &__subtitle {
+            font-size: 27px;
+            width: 70%;
+        }
+        &__text {
+            font-size: 16px;
+            color: #777B87;
+        }
+        &__btn {
+            @include btn(225px, 56px, $primary, white, none, 18px, 25px)
+        }
+    }
+}

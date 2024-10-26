@@ -37,6 +37,7 @@ a {
 .container {
     width: 1200px;
     margin: 0 auto;
+    position: relative;
 }
 
 body {
@@ -44,7 +45,6 @@ body {
     background-size: cover;
     width: 100%;
     height: 100%;
-    position: relative;
 }
 button {
     cursor: pointer;
@@ -52,7 +52,6 @@ button {
 .sidenav {
     width: 1200px;
     z-index: -1;
-    position: absolute;
     display: flex;
     justify-content: space-between;
     height: 85px;
@@ -72,10 +71,11 @@ button {
     &__left {
         background-size: cover;
         display: none;
-        width: 100vw;
+        width: 100%;
         background: $secondary;
         z-index: 10;
         height: 100vh;
+        position: absolute;
 
         &__nav {
             display: flex;

@@ -12,7 +12,7 @@
 <body>
     <header class="header">
         <div class="container">
-            <nav class="sidenav">
+            <nav class="sidenav" id="nav">
                 <img src="./assets/imgs/logo.png" alt="logo" class="sidenav__logo">
                 <div>
                     <h3 class="sidenav__menu">
@@ -24,45 +24,162 @@
                 </div>
             </nav>
         </div>
+        <aside class="sidenav__left" id="menu">
+            <div class="container">
+                <nav class="sidenav__left__nav">
+                    <img src="./assets/imgs/logo-white.png" alt="leftlogo" class="sidenav__left__nav__img">
+                    <h3 class="sidenav__left__nav__menu">
+                        Menu
+                        <button class="sidenav__left__nav__btn" id="sidenavCloseBtn">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </h3>
+                </nav>
+                <div class="sidenav__left__hero">
+                    <a href="#">
+                        <h1 class="sidenav__left__hero__title">
+                            Портфолио
+                        </h1>
+                    </a>
+                    <a href="#">
+                        <h1 class="sidenav__left__hero__link">Блог</h1>
+                    </a>
+                    <a href="#">
+                        <h1 class="sidenav__left__hero__link">О маркетинге</h1>
+                    </a>
+                    <p class="sidenav__left__hero__subtitles">
+                        Разбор сайта
+                    </p>
+                    <p class="sidenav__left__hero__subtitles">
+                        Квиз на разработку
+                    </p>
+                    <p class="sidenav__left__hero__subtitles">
+                        Контакты
+                    </p>
+                </div>
+                <p class="sidenav__left__hero__bottom">
+                    +7(066) 364 19 19 / info@DidgiKey
+                </p>
+            </div>
+        </aside>
     </header>
-    <aside class="sidenav__left" id="menu">
-        <div class="container">
-            <nav class="sidenav__left__nav">
-                <img src="./assets/imgs/logo-white.png" alt="leftlogo" class="sidenav__left__nav__img">
-                <h3 class="sidenav__left__nav__menu">
-                    Menu
-                    <button class="sidenav__left__nav__btn" id="sidenavCloseBtn">
-                        <i class="fa-solid fa-xmark"></i>
-                    </button>
-                </h3>
-            </nav>
-            <main class="sidenav__left__hero">
-                <a href="#">
-                    <h1 class="sidenav__left__hero__title">
-                        Портфолио
+
+    <div class="container">
+        <section class="hero">
+            <div class="hero__info">
+                <h1 class="hero__info__title">
+                    Digital агенство полного цикла
+                </h1>
+                <h4 class="hero__info__subtitle">
+                    Проектируем и воплощаем эффектные цифровые стратегии
+                </h4>
+                <p class="hero__info__text">
+                    Задача организации, в особенности же рамки и место обучения кадров представляет собой интересный
+                    эксперимент проверки систем массового участия.
+                </p>
+                <button class="hero__info__btn">
+                    Связаться с нами
+                </button>
+            </div>
+            <img src="./assets/imgs/hero.png" alt="hero" class="hero__img">
+        </section>
+    </div>
+    <div class="container">
+        <section class="services">
+            <h1 class="services__title">
+                Услуги
+            </h1>
+            <div class="services__list">
+                <div class="services__item">
+                    <h1 class="services__item__title">
+                        Маркетинг
                     </h1>
-                </a>
-                <a href="#">
-                    <h1 class="sidenav__left__hero__link">Блог</h1>
-                </a>
-                <a href="#">
-                    <h1 class="sidenav__left__hero__link">О маркетинге</h1>
-                </a>
-                <p class="sidenav__left__hero__subtitles">
-                    Разбор сайта
-                </p>
-                <p class="sidenav__left__hero__subtitles">
-                    Квиз на разработку
-                </p>
-                <p class="sidenav__left__hero__subtitles">
-                    Контакты
-                </p>
-            </main>
-            <p class="sidenav__left__hero__bottom">
-                +7(066) 364 19 19 / info@DidgiKey
-            </p>
-        </div>
-    </aside>
+                    <ul class="services__item__list">
+                        <li class="services__item__text">
+                            Контекстная реклама
+                        </li>
+                        <li class="services__item__text">
+                            SMM
+                        </li>
+                        <li class="services__item__text">
+                            Вирусная реклама
+                        </li>
+                        <li class="services__item__text">
+                            Подключение онлайн-оплаты
+                        </li>
+                        <li class="services__item__text">
+                            Аналитика Big Data
+                        </li>
+                        <li class="services__item__text">
+                            SEO
+                        </li>
+                        <li class="services__item__text">
+                            Контекстная реклама
+                        </li>                        
+                    </ul>
+                </div>
+
+                <div class="services__item">
+                    <h1 class="services__item__title">
+                        Разработка
+                    </h1>
+                    <ul class="services__item__list">
+                        <li class="services__item__text">
+                            Front-end
+                        </li>
+                        <li class="services__item__text">
+                            Back-end
+                        </li>
+                        <li class="services__item__text">
+                            Создание web-приложений
+                        </li>
+                        <li class="services__item__text">
+                            Вирусная реклама
+                        </li>
+                        <li class="services__item__text">
+                            Подключение онлайн-оплаты
+                        </li>
+                        <li class="services__item__text">
+                            Аналитика Big Data
+                        </li>
+                        <li class="services__item__text">
+                            SEO
+                        </li>                        
+                    </ul>
+                </div>
+
+                <div class="services__item">
+                    <h1 class="services__item__title">
+                        Маркетинг
+                    </h1>
+                    <ul class="services__item__list">
+                        <li class="services__item__text">
+                            Контекстная реклама
+                        </li>
+                        <li class="services__item__text">
+                            SMM
+                        </li>
+                        <li class="services__item__text">
+                            Вирусная реклама
+                        </li>
+                        <li class="services__item__text">
+                            Подключение онлайн-оплаты
+                        </li>
+                        <li class="services__item__text">
+                            Аналитика Big Data
+                        </li>
+                        <li class="services__item__text">
+                            SEO
+                        </li>
+                        <li class="services__item__text">
+                            Контекстная реклама
+                        </li>                        
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+
     <script src="assets/js/app.js"></script>
 </body>
 
