@@ -151,8 +151,14 @@
     }
 
     &__btn {
-      @include btn(220px, 50px, $primary, white, 2px solid $primary, 17px, 30px);
-      
+      @include btn(220px,
+        50px,
+        $primary,
+        white,
+        2px solid $primary,
+        17px,
+        30px);
+
       &:hover {
         transition: all 0.5s ease-out;
         background: transparent;
@@ -172,10 +178,12 @@
 
   &__title {
     font-size: 36px;
-    & > span {
+
+    &>span {
       font-weight: 900;
     }
   }
+
   &__item {
     width: 270px;
     height: 180px;
@@ -184,32 +192,38 @@
     align-items: center;
     background: #fff;
   }
+
   &__list {
     display: flex;
     justify-content: space-between;
   }
 }
+
 .apps {
   background: #fff;
   padding: 50px 0;
 
-  & > .container {
+  &>.container {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
+
   &__name {
     font-size: 18px;
     font-weight: bold;
   }
+
   &__box {
     border-right: 2px solid gray;
     padding-right: 40px;
   }
+
   &__title {
     font-size: 71px;
     font-weight: bold;
   }
+
   &__links {
     display: flex;
     flex-direction: column;
@@ -221,8 +235,97 @@
   }
 }
 
+.blog {
+  margin: 70px 0;
 
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
 
+  &__item {
+    width: 23% !important;
+
+    &__date {
+      font-size: 16px;
+      color: gray;
+    }
+
+    &__title {
+      font-size: 16px;
+      margin: 10px 0;
+    }
+
+    &__subtitle {
+      color: gray;
+      margin-bottom: 10px;
+    }
+
+    &__link {
+      color: $primary;
+      border-bottom: 1px dashed $primary;
+    }
+
+    &__img {
+      width: 100%;
+    }
+  }
+}
+
+.projects {
+  background-image: url(../imgs/projects-bg.png);
+  background-size: cover;
+
+  &>.container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__img {
+    height: 600px;
+  }
+
+  &__info {
+    &__title {
+      font-size: 36px;
+      font-weight: bold;
+      width: 77%;
+    }
+
+    &__subtitle {
+      font-size: 18px;
+      margin: 10px 0;
+      color: gray;
+    }
+
+    &__btn {
+      @include btn(186px,
+        56px,
+        $primary,
+        white,
+        2px solid $primary,
+        16px,
+        30px);
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        justify-content: center;
+
+      &>i {
+        color: white;
+        font-size: 20px;
+      }
+      &:hover {
+        color: $text;
+        background: transparent;
+        transition: all .3s ease-out;
+      }
+      &:hover .projects__info__icon {
+        color: $text;
+      }
+    }
+  }
+}
 
 // @mixin btn($width, $heigh, $bg, $color, $border, $size, $radius) {
 //   width: $width;

@@ -303,4 +303,81 @@ button {
 }
 .apps__links__item {
   text-decoration: underline;
+}
+
+.blog {
+  margin: 70px 0;
+}
+.blog__list {
+  display: flex;
+  justify-content: space-between;
+}
+.blog__item {
+  width: 23% !important;
+}
+.blog__item__date {
+  font-size: 16px;
+  color: gray;
+}
+.blog__item__title {
+  font-size: 16px;
+  margin: 10px 0;
+}
+.blog__item__subtitle {
+  color: gray;
+  margin-bottom: 10px;
+}
+.blog__item__link {
+  color: #45A6FF;
+  border-bottom: 1px dashed #45A6FF;
+}
+.blog__item__img {
+  width: 100%;
+}
+
+.projects {
+  background-image: url(../imgs/projects-bg.png);
+  background-size: cover;
+}
+.projects > .container {
+  display: flex;
+  align-items: center;
+}
+.projects__img {
+  height: 600px;
+}
+.projects__info__title {
+  font-size: 36px;
+  font-weight: bold;
+  width: 77%;
+}
+.projects__info__subtitle {
+  font-size: 18px;
+  margin: 10px 0;
+  color: gray;
+}
+.projects__info__btn {
+  width: 186px;
+  height: 56px;
+  background: #45A6FF;
+  color: white;
+  border: 2px solid #45A6FF;
+  font-size: 16px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+.projects__info__btn > i {
+  color: white;
+  font-size: 20px;
+}
+.projects__info__btn:hover {
+  color: #3B4252;
+  background: transparent;
+  transition: all 0.3s ease-out;
+}
+.projects__info__btn:hover .projects__info__icon {
+  color: #3B4252;
 }/*# sourceMappingURL=index.css.map */
