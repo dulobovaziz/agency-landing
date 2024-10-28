@@ -1,40 +1,235 @@
 @import "./__extra";
 
-@mixin btn($width,$heigh, $bg, $color, $border, $size, $radius){
-    width: $width;
-    height: $heigh;
-    background: $bg;
-    color: $color;
-    border: $border;
-    font-size: $size;
-    border-radius: $radius;
+@mixin btn($width, $heigh, $bg, $color, $border, $size, $radius) {
+  width: $width;
+  height: $heigh;
+  background: $bg;
+  color: $color;
+  border: $border;
+  font-size: $size;
+  border-radius: $radius;
 }
 
 .hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__info {
+    margin-top: -140px;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+
+    &__title {
+      font-size: 58px;
+      font-weight: bold;
+    }
+
+    &__subtitle {
+      font-size: 27px;
+      width: 70%;
+    }
+
+    &__text {
+      font-size: 16px;
+      color: #777b87;
+    }
+
+    &__btn {
+      @include btn(225px,
+        56px,
+        $primary,
+        white,
+        2px solid $primary,
+        18px,
+        25px);
+
+      &:hover {
+        transition: all 0.5s ease-out;
+        background: transparent;
+        color: $text;
+      }
+
+      &:active {
+        transform: scale(1.1);
+        transition: all 0.2s ease-out;
+      }
+    }
+  }
+}
+
+.services {
+  margin-bottom: 100px;
+
+  &__title {
+    font-size: 36px;
+    font-weight: bold;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+  }
+
+  &__item {
+    background: #fff;
+    box-shadow: 0 4px 50px rgba(0, 0, 0, 0.15);
+    padding: 40px 0;
+    width: 390px;
+    text-align: center;
+
+    &__list {
+      margin: 20px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+}
+
+.portfolio {
+  background: #fff;
+  margin-bottom: 100px;
+  padding: 100px;
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+
+    &__list {
+      display: flex;
+      gap: 36px;
+    }
+
+    &__item {
+      cursor: pointer;
+      border-bottom: 1px dashed $text;
+
+      &:hover {
+        color: $primary;
+        transition: all 0.2s ease-out;
+        border-bottom: 1px dashed $primary;
+      }
+    }
+  }
+
+  &__hero {
+    display: flex;
+    justify-content: space-between;
+
+    &__img {
+      width: 700px;
+    }
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 80px;
+
+      &__name {
+        font-size: 16px;
+        color: rgba(59, 66, 82, 1);
+        font-weight: bold;
+      }
+
+      &__title {
+        font-size: 36px;
+        color: rgba(59, 66, 82, 1);
+        font-weight: bold;
+      }
+
+      &__subtitle {
+        font-size: 16px;
+        color: rgba(119, 123, 135, 1);
+        font-weight: 400;
+        line-height: 20.8px;
+      }
+    }
+
+    &__btn {
+      @include btn(220px, 50px, $primary, white, 2px solid $primary, 17px, 30px);
+      
+      &:hover {
+        transition: all 0.5s ease-out;
+        background: transparent;
+        color: $text;
+      }
+
+      &:active {
+        transform: scale(1.1);
+        transition: all 0.2s ease-out;
+      }
+    }
+  }
+}
+
+.clients {
+  margin: 50px 0;
+
+  &__title {
+    font-size: 36px;
+    & > span {
+      font-weight: 900;
+    }
+  }
+  &__item {
+    width: 270px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.apps {
+  background: #fff;
+  padding: 50px 0;
+
+  & > .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+  &__name {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  &__box {
+    border-right: 2px solid gray;
+    padding-right: 40px;
+  }
+  &__title {
+    font-size: 71px;
+    font-weight: bold;
+  }
+  &__links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 
-    &__info {
-        margin-top: -140px;
-        display: flex;
-        flex-direction: column;
-        gap: 13px;
-
-        &__title {
-            font-size: 58px;
-            font-weight: bold;
-        }
-        &__subtitle {
-            font-size: 27px;
-            width: 70%;
-        }
-        &__text {
-            font-size: 16px;
-            color: #777B87;
-        }
-        &__btn {
-            @include btn(225px, 56px, $primary, white, none, 18px, 25px)
-        }
+    &__item {
+      text-decoration: underline;
     }
+  }
 }
+
+
+
+
+// @mixin btn($width, $heigh, $bg, $color, $border, $size, $radius) {
+//   width: $width;
+//   height: $heigh;
+//   background: $bg;
+//   color: $color;
+//   border: $border;
+//   font-size: $size;
+//   border-radius: $radius;
+// }
