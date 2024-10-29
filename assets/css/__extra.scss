@@ -2,23 +2,26 @@
     font-family: Montserrat;
     src: url(../fonts/Montserrat-Bold.woff);
 }
+
 @font-face {
     font-family: Montserrat;
     src: url(../fonts/Montserrat-Regular.woff);
 }
+
 @font-face {
     font-family: Montserrat;
     src: url(../fonts/Montserrat-Bold.woff2);
 }
+
 @font-face {
     font-family: Montserrat;
     src: url(../fonts/Montserrat-Regular.woff2);
 }
 
-$primary:#45A6FF;
-$text: #3B4252;
+$primary: #45a6ff;
+$text: #3b4252;
 $family: Montserrat;
-$secondary: #1D2434;
+$secondary: #1d2434;
 
 a {
     text-decoration: none;
@@ -46,12 +49,15 @@ body {
     width: 100%;
     height: 100%;
 }
+
 button {
     cursor: pointer;
 }
+.header {
+    z-index: 10;
+}
 .sidenav {
     width: 1200px;
-    z-index: -1;
     display: flex;
     justify-content: space-between;
     height: 85px;
@@ -61,13 +67,14 @@ button {
         display: flex;
         align-items: center;
         gap: 15px;
-        
+
         &__btn {
             background: transparent;
             border: none;
             font-size: 20px;
         }
     }
+
     &__left {
         background-size: cover;
         display: none;
@@ -89,35 +96,76 @@ button {
                 gap: 13px;
                 align-items: center;
             }
-            &__btn, &__btn > i {
+
+            &__btn,
+            &__btn>i {
                 background: transparent;
                 color: white;
                 font-size: 23px;
                 border: none;
             }
         }
+
         &__hero {
             margin: 90px 0;
+
             &__title {
                 color: $primary;
                 font-size: 58px;
                 font-weight: bold;
             }
+
             &__link {
                 color: white;
                 font-size: 59px;
                 font-weight: bold;
             }
+
             &__subtitles {
                 font-size: 28px;
                 margin: 10px 0;
                 color: white;
                 font-weight: normal;
             }
+
             &__bottom {
                 color: white;
                 font-size: 20px;
             }
         }
+    }
+}
+
+.footer {
+        width: 100%;
+    bottom: 0;
+    background: #fff;
+    padding: 30px 0;
+    border-top: 2px solid #ebebeb;
+
+    &>.container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        &__text {
+            border-left: 1px solid gray;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+        }
+    }
+
+    &__text {
+        text-align: right;
+        flex-direction: column;
+        display: flex;
+        gap: 5px;
     }
 }

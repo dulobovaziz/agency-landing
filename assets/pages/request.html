@@ -1,12 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Digital Agency #quiz || @AzizbekDulobov</title>
-    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
 </head>
-<body>
-    
+
+<body style="overflow: hidden;">
+    <header class="header" style="position: fixed;width: 100%;">
+        <div class="container">
+            <nav class="sidenav" id="nav">
+                <img src="../imgs/logo.png" alt="logo" class="sidenav__logo" />
+                <div>
+                    <h3 class="sidenav__menu">
+                        Menu
+                        <button class="sidenav__menu__btn" id="sidenavOpenBtn">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                    </h3>
+                </div>
+            </nav>
+        </div>
+        <aside class="sidenav__left" id="menu">
+            <div class="container">
+                <nav class="sidenav__left__nav">
+                    <img src="../imgs/logo-white.png" alt="leftlogo" class="sidenav__left__nav__img" />
+                    <h3 class="sidenav__left__nav__menu">
+                        Menu
+                        <button class="sidenav__left__nav__btn" id="sidenavCloseBtn">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </h3>
+                </nav>
+                <div class="sidenav__left__hero">
+                    <a href="#">
+                        <h1 class="sidenav__left__hero__title">Портфолио</h1>
+                    </a>
+                    <a href="#">
+                        <h1 class="sidenav__left__hero__link">Блог</h1>
+                    </a>
+                    <a href="#">
+                        <h1 class="sidenav__left__hero__link">О маркетинге</h1>
+                    </a>
+                    <p class="sidenav__left__hero__subtitles">Разбор сайта</p>
+                    <p class="sidenav__left__hero__subtitles">Квиз на разработку</p>
+                    <p class="sidenav__left__hero__subtitles">Контакты</p>
+                </div>
+                <p class="sidenav__left__hero__bottom">
+                    +7(066) 364 19 19 / info@DidgiKey
+                </p>
+            </div>
+        </aside>
+    </header>
+
+    <main class="request" style="z-index: -1;">
+        <div class="container">
+            <section class="request__hero">
+                <div class="request__main">
+                    <h1 class="request__hero__title">Есть проект?</h1>
+                    <h3 class="request__hero__subtitle">
+                        С нетерпением приступим к нему
+                    </h3>
+                    <p class="request__hero__location">
+                        г.Москва ул. Освобождения, д.3
+                    </p>
+                    <p class="request__hero__person">
+                        +7(066) 364 19 19 / info@DidgiKey
+                    </p>
+                    <button class="request__hero__btn">
+                        <a href="#first" class="request__hero__link">Связаться с нами</a>
+                    </button>
+                </div>
+            </section>
+        </div>
+
+        <section class="siteType" id="first">
+            <div class="container">
+                <h1 class="siteType__title">
+                    Пройдите опрос из 7 вопросов и получите
+                </h1>
+                <p class="siteType__subtitle">
+                    Стоимость и сроки разработки. Краткий анализ вашей компании и
+                    рекомендации. План работ и маркетинговую стратегию.
+                </p>
+        </section>
+        </div>
+    </main>
+
+    <footer class="footer" style="position: fixed;width: 100%;">
+        <div class="container">
+            <div class="footer__logo">
+                <img src="../imgs/logo.png" alt="footerLogo" class="footer__img" />
+                <p class="footer__logo__text">Digital агенство полного цикла</p>
+            </div>
+            <div class="footer__text">
+                <p class="footer__text__item">
+                    © 1999-2020 Интернет-компания DidgiKey
+                </p>
+                <p class="footer__text__item">
+                    Информация на сайте не является публичной офертой
+                </p>
+                <p class="footer__text__item">
+                    Актуальные цены уточняйте у менеджеров
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/app.js"></script>
 </body>
+
 </html>

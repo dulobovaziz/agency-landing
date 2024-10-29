@@ -1,0 +1,73 @@
+@import "./__extra";
+
+@mixin btn($width, $heigh, $bg, $color, $border, $size, $radius) {
+    width: $width;
+    height: $heigh;
+    background: $bg;
+    color: $color;
+    border: $border;
+    font-size: $size;
+    border-radius: $radius;
+  }
+
+.request__hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    & > .request__main {
+        text-align: center;
+    }
+    &__title {
+        font-size: 58px;
+        font-weight: bold;
+    }
+    &__subtitle {
+        font-size: 28px;
+    }
+    &__person {
+        font-size: 18px;
+    }
+    &__location {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+    &__btn {
+        @include btn(250px, 56px, $primary, white, 2px solid $primary,  18px, 30px);
+        margin-top: 10px;
+
+        & > a {
+            color: white;
+        }
+
+        &:hover {
+            background: transparent;
+            & .request__hero__link {
+                color: $primary;
+            }
+        }
+        &:active {
+            transform: scale(1.1);
+            transition: all .4s ease-out;
+        }
+    }
+}
+.siteType {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+// @mixin btn($width, $heigh, $bg, $color, $border, $size, $radius) {
+//     width: $width;
+//     height: $heigh;
+//     background: $bg;
+//     color: $color;
+//     border: $border;
+//     font-size: $size;
+//     border-radius: $radius;
+//   }

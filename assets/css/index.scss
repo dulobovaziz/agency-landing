@@ -1,4 +1,5 @@
 @import "./__extra";
+@import "./_request";
 
 @mixin btn($width, $heigh, $bg, $color, $border, $size, $radius) {
   width: $width;
@@ -48,7 +49,11 @@
       &:hover {
         transition: all 0.5s ease-out;
         background: transparent;
-        color: $text;
+        // color: $text;
+      }
+
+      &:hover .hero__info__link {
+        color: $primary !important;
       }
 
       &:active {
@@ -322,6 +327,10 @@
       }
       &:hover .projects__info__icon {
         color: $text;
+      }
+      &:active {
+        transform: scale(1.1);
+        transition: all .3s ease-out;
       }
     }
   }
