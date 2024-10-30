@@ -57,10 +57,108 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    &__test {
+        display: flex;
+        gap: 50px;
+
+    }
+    &__title {
+        font-size: 36px;
+        width: 45%;
+    }
+    &__subtitle {
+        font-size: 18px;
+        color: rgba(119, 123, 135, 1);
+        width: 65%;
+        margin: 20px 0;
+    }
+    &__item {
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+
+        &__img {
+            width: 82px;
+
+        }
+        &__label {
+            margin-top: -10px;
+            display: flex;
+            gap: 10px;
+            width: 250px;
+        }
+    }
+    &__btn {
+        @include btn(236px, 56px, $primary, white, 2px solid $primary, 18px, 30px);
+        margin-top: 10px;
+        & > i, & > a {
+            color: white;
+        }
+        &:hover {
+            background: transparent;
+            & a, & i {
+                color: $primary;
+            }
+            &:active {
+                transform: scale(1.1);
+                transition: all .4s ease-out;
+            }
+        }
+    }
+
+}
+.requestSecond {
+    height: 100vh;
+    display: flex;
+
+    &__img {
+        width: 200px;
+    }
+    &__back {
+        @include btn(180px, 56px, transparent, $text, 2px solid $text, 18px, 30px);
+        &:hover {
+            background: $text;
+            & a, & i {
+                color: white;
+            }
+        }
+        &:active {
+            transform: scale(1.1);
+            transition: all .4s ease-out;
+        }
+    }
+}
+.fivth__form {
+    &__grp {
+        display: flex;
+        gap: 15px;
+        margin-top: 10px;
+    }
+    &__label {
+        display: flex;
+        gap: 10px;
+    }
+    &__text {
+        font-size: 17px;
+    }
+    &__inp {
+        padding-left: 10px;
+        background: rgba(233, 233, 233, 1);
+        border: 1px solid gray;
+        border-radius: 5px;
+        width: 286px;
+        height: 48px;
+        outline: none;
+        &::placeholder {
+            font-size: 18px;
+        }
+    }
 }
 
-
-
+.sixth__form {
+    background: red;
+}
 
 // @mixin btn($width, $heigh, $bg, $color, $border, $size, $radius) {
 //     width: $width;
