@@ -457,6 +457,286 @@ button {
   font-size: 18px;
 }
 
+.sixth__form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.sixth__form > input {
+  width: 413px;
+  height: 44px;
+  border-radius: 5px;
+  border: 1px solid rgb(233, 233, 233);
+  outline: none;
+  font-size: 18px;
+  padding-left: 10px;
+}
+.sixth__form > textarea {
+  width: 413px;
+  height: 110px;
+  max-width: 413px;
+  min-width: 413px;
+  max-height: 110px;
+  min-height: 70px;
+  font-size: 18px;
+  padding: 10px;
+  outline: none;
+  border: 1px solid rgb(233, 233, 233);
+}
+
+.seventh__btn {
+  width: 320px;
+  height: 56px;
+  background: #45a6ff;
+  color: white;
+  border: 2px solid #45a6ff;
+  font-size: 18px;
+  border-radius: 30px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.seventh__btn > a, .seventh__btn > i {
+  color: white;
+}
+.seventh__btn:hover {
+  background: transparent;
+  transition: all 0.4s ease-out;
+}
+.seventh__btn:hover a, .seventh__btn:hover i {
+  color: #45a6ff;
+}
+.seventh__btn:active {
+  transform: scale(1.1);
+  transition: all 0.4s ease-out;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(../fonts/Montserrat-Bold.woff);
+}
+@font-face {
+  font-family: Montserrat;
+  src: url(../fonts/Montserrat-Regular.woff);
+}
+@font-face {
+  font-family: Montserrat;
+  src: url(../fonts/Montserrat-Bold.woff2);
+}
+@font-face {
+  font-family: Montserrat;
+  src: url(../fonts/Montserrat-Regular.woff2);
+}
+a {
+  text-decoration: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: none;
+  list-style: none;
+  font-family: Montserrat;
+  color: #3b4252;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+body {
+  background: url(../imgs/background.png), #f3f3f3;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+button {
+  cursor: pointer;
+}
+
+.header {
+  z-index: 10;
+}
+
+.sidenav {
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  height: 85px;
+  align-items: center;
+}
+.sidenav__menu {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.sidenav__menu__btn {
+  background: transparent;
+  border: none;
+  font-size: 20px;
+}
+.sidenav__left {
+  background-size: cover;
+  display: none;
+  width: 100%;
+  background: #1d2434;
+  z-index: 10;
+  height: 100vh;
+  position: absolute;
+}
+.sidenav__left__nav {
+  display: flex;
+  height: 80px;
+  align-items: center;
+  justify-content: space-between;
+}
+.sidenav__left__nav__menu {
+  color: white;
+  display: flex;
+  gap: 13px;
+  align-items: center;
+}
+.sidenav__left__nav__btn, .sidenav__left__nav__btn > i {
+  background: transparent;
+  color: white;
+  font-size: 23px;
+  border: none;
+}
+.sidenav__left__hero {
+  margin: 90px 0;
+}
+.sidenav__left__hero__title {
+  color: #45a6ff;
+  font-size: 58px;
+  font-weight: bold;
+}
+.sidenav__left__hero__link {
+  color: white;
+  font-size: 59px;
+  font-weight: bold;
+}
+.sidenav__left__hero__subtitles {
+  font-size: 28px;
+  margin: 10px 0;
+  color: white;
+  font-weight: normal;
+}
+.sidenav__left__hero__bottom {
+  color: white;
+  font-size: 20px;
+}
+
+.footer {
+  width: 100%;
+  bottom: 0;
+  background: #fff;
+  padding: 30px 0;
+  border-top: 2px solid #ebebeb;
+}
+.footer > .container {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.footer__logo__text {
+  border-left: 1px solid gray;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+.footer__text {
+  text-align: right;
+  flex-direction: column;
+  display: flex;
+  gap: 5px;
+}
+
+.tabs {
+  text-align: center;
+  border-bottom: 2px solid #3b4252;
+}
+.tabs__list {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  gap: 30px;
+  margin: 20px 0;
+}
+.tabs__list__item {
+  font-size: 20px;
+  border-bottom: 1px dashed #3b4252;
+  cursor: pointer;
+}
+.tabs__list__item:hover {
+  color: #45a6ff;
+  transition: all 0.3s;
+}
+
+.project {
+  padding: 50px 0;
+}
+.project > .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.project__info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.project__info__img {
+  width: 700px;
+}
+.project__info__name {
+  font-size: 17px;
+  color: #3b4252;
+  line-height: 14px;
+  font-weight: 700;
+}
+.project__info__title {
+  font-size: 37px;
+  font-weight: 800;
+}
+.project__info__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 217px;
+  height: 56px;
+  background: #45a6ff;
+  color: white;
+  border: 2px solid #45a6ff;
+  font-size: 18px;
+  border-radius: 30px;
+}
+.project__info__btn > i {
+  color: white;
+}
+.project__info__btn:hover {
+  color: #45a6ff;
+  background: transparent;
+  transition: all 0.3s;
+}
+.project__info__btn:hover i {
+  color: #45a6ff;
+}
+.project__info__btn:active {
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+}
+
 .hero {
   display: flex;
   justify-content: space-between;
@@ -515,10 +795,15 @@ button {
 }
 .services__item {
   background: #fff;
-  box-shadow: 0 4px 50px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 50px rgba(225, 225, 225, 0.15);
   padding: 40px 0;
   width: 390px;
   text-align: center;
+}
+.services__item:hover {
+  box-shadow: 0 4px 50px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
 }
 .services__item__list {
   margin: 20px 0;
@@ -614,6 +899,11 @@ button {
   justify-content: center;
   align-items: center;
   background: #fff;
+}
+.clients__item:hover {
+  box-shadow: 0 4px 50px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
 }
 .clients__list {
   display: flex;

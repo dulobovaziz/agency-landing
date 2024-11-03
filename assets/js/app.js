@@ -11,5 +11,4 @@ openBtn.addEventListener("click", () => {
 closeBtn.addEventListener("click", () => {
     menu.style.display = "none";
     nav.style.position = "static"
-
 })

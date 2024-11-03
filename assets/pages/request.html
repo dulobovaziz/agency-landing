@@ -1,455 +1,400 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Digital Agency #quiz || @AzizbekDulobov</title>
     <link rel="stylesheet" href="../css/index.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-    />
-  </head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+</head>
 
-  <body style="overflow: hidden">
+<body style="overflow: hidden">
     <header class="header" style="position: fixed; width: 100%">
-      <div class="container">
-        <nav class="sidenav" id="nav">
-          <img src="../imgs/logo.png" alt="logo" class="sidenav__logo" />
-          <div>
-            <h3 class="sidenav__menu">
-              Menu
-              <button class="sidenav__menu__btn" id="sidenavOpenBtn">
-                <i class="fa-solid fa-bars"></i>
-              </button>
-            </h3>
-          </div>
-        </nav>
-      </div>
-      <aside class="sidenav__left" id="menu">
         <div class="container">
-          <nav class="sidenav__left__nav">
-            <img
-              src="../imgs/logo-white.png"
-              alt="leftlogo"
-              class="sidenav__left__nav__img"
-            />
-            <h3 class="sidenav__left__nav__menu">
-              Menu
-              <button class="sidenav__left__nav__btn" id="sidenavCloseBtn">
-                <i class="fa-solid fa-xmark"></i>
-              </button>
-            </h3>
-          </nav>
-          <div class="sidenav__left__hero">
-            <a href="#">
-              <h1 class="sidenav__left__hero__title">Портфолио</h1>
-            </a>
-            <a href="#">
-              <h1 class="sidenav__left__hero__link">Блог</h1>
-            </a>
-            <a href="#">
-              <h1 class="sidenav__left__hero__link">О маркетинге</h1>
-            </a>
-            <p class="sidenav__left__hero__subtitles">Разбор сайта</p>
-            <p class="sidenav__left__hero__subtitles">Квиз на разработку</p>
-            <p class="sidenav__left__hero__subtitles">Контакты</p>
-          </div>
-          <p class="sidenav__left__hero__bottom">
-            +7(066) 364 19 19 / info@DidgiKey
-          </p>
+            <nav class="sidenav" id="nav">
+                <img src="../imgs/logo.png" alt="logo" class="sidenav__logo" />
+                <div>
+                    <h3 class="sidenav__menu">
+                        Menu
+                        <button class="sidenav__menu__btn" id="sidenavOpenBtn">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                    </h3>
+                </div>
+            </nav>
         </div>
-      </aside>
+        <aside class="sidenav__left" id="menu">
+            <div class="container">
+                <nav class="sidenav__left__nav">
+                    <img src="../imgs/logo-white.png" alt="leftlogo" class="sidenav__left__nav__img" />
+                    <h3 class="sidenav__left__nav__menu">
+                        Menu
+                        <button class="sidenav__left__nav__btn" id="sidenavCloseBtn">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </h3>
+                </nav>
+                <div class="sidenav__left__hero">
+                    <a href="#">
+                        <h1 class="sidenav__left__hero__title">Портфолио</h1>
+                    </a>
+                    <a href="#">
+                        <h1 class="sidenav__left__hero__link">Блог</h1>
+                    </a>
+                    <a href="#">
+                        <h1 class="sidenav__left__hero__link">О маркетинге</h1>
+                    </a>
+                    <p class="sidenav__left__hero__subtitles">Разбор сайта</p>
+                    <p class="sidenav__left__hero__subtitles">Квиз на разработку</p>
+                    <p class="sidenav__left__hero__subtitles">Контакты</p>
+                </div>
+                <p class="sidenav__left__hero__bottom">
+                    +7(066) 364 19 19 / info@DidgiKey
+                </p>
+            </div>
+        </aside>
     </header>
 
     <main class="request" style="z-index: -1">
-      <div class="container">
-        <section class="request__hero">
-          <div class="request__main">
-            <h1 class="request__hero__title">Есть проект?</h1>
-            <h3 class="request__hero__subtitle">
-              С нетерпением приступим к нему
-            </h3>
-            <p class="request__hero__location">
-              г.Москва ул. Освобождения, д.3
-            </p>
-            <p class="request__hero__person">
-              +7(066) 364 19 19 / info@DidgiKey
-            </p>
-            <button class="request__hero__btn">
-              <a href="#first" class="request__hero__link">Связаться с нами</a>
-            </button>
-          </div>
+        <div class="container">
+            <section class="request__hero">
+                <div class="request__main">
+                    <h1 class="request__hero__title">Есть проект?</h1>
+                    <h3 class="request__hero__subtitle">
+                        С нетерпением приступим к нему
+                    </h3>
+                    <p class="request__hero__location">
+                        г.Москва ул. Освобождения, д.3
+                    </p>
+                    <p class="request__hero__person">
+                        +7(066) 364 19 19 / info@DidgiKey
+                    </p>
+                    <button class="request__hero__btn">
+                        <a href="#first" class="request__hero__link">Связаться с нами</a>
+                    </button>
+                </div>
+            </section>
+        </div>
+
+        <section class="siteType" id="first">
+            <div class="container">
+                <h1 class="siteType__title">
+                    Пройдите опрос из 7 вопросов и получите
+                </h1>
+                <p class="siteType__subtitle">
+                    Стоимость и сроки разработки. Краткий анализ вашей компании и
+                    рекомендации. План работ и маркетинговую стратегию.
+                </p>
+                <div class="siteType__test">
+                    <div class="siteType__item">
+                        <img src="../imgs/first-1.png" alt="sitetype" class="siteType__item__img" />
+                        <div class="siteType__item__info">
+                            <label class="siteType__item__label">
+                                <input name="." type="radio" />
+                                <span class="siteType__item__text">Landing page</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="siteType__item">
+                        <img src="../imgs/first-2.png" alt="sitetype" class="siteType__item__img" />
+                        <div class="siteType__item__info">
+                            <label class="siteType__item__label">
+                                <input name="." type="radio" />
+                                <span class="siteType__item__text">Многстраничный сайт</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="siteType__item">
+                        <img src="../imgs/first-3.png" alt="sitetype" class="siteType__item__img" />
+                        <div class="siteType__item__info">
+                            <label class="siteType__item__label">
+                                <input name="." type="radio" />
+                                <span class="siteType__item__text">Интернет-магазин</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="siteType__item">
+                        <img src="../imgs/first-4.png" alt="sitetype" class="siteType__item__img" />
+                        <div class="siteType__item__info">
+                            <label class="siteType__item__label">
+                                <input name="." type="radio" />
+                                <span class="siteType__item__text">Не уверен(-а)</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <button class="siteType__btn">
+                    <a href="#second">Продолжить</a>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
         </section>
-      </div>
 
-      <section class="siteType" id="first">
-        <div class="container">
-          <h1 class="siteType__title">
-            Пройдите опрос из 7 вопросов и получите
-          </h1>
-          <p class="siteType__subtitle">
-            Стоимость и сроки разработки. Краткий анализ вашей компании и
-            рекомендации. План работ и маркетинговую стратегию.
-          </p>
-          <div class="siteType__test">
-            <div class="siteType__item">
-              <img
-                src="../imgs/first-1.png"
-                alt="sitetype"
-                class="siteType__item__img"
-              />
-              <div class="siteType__item__info">
-                <label class="siteType__item__label">
-                  <input name="." type="radio" />
-                  <span class="siteType__item__text">Landing page</span>
-                </label>
-              </div>
+        <section class="requestSecond" id="second">
+            <div class="container">
+                <h1 class="siteType__title">
+                    Пройдите опрос из 6 вопросов и получите
+                </h1>
+                <p class="siteType__subtitle">
+                    Стоимость и сроки разработки. Краткий анализ вашей компании и
+                    рекомендации. План работ и маркетинговую стратегию.
+                </p>
+                <div class="siteType__test">
+                    <div class="siteType__item">
+                        <img src="../imgs/second-1.png" alt="sitetype" class="requestSecond__img" />
+                        <div class="siteType__item__info">
+                            <label class="siteType__item__label">
+                                <input name="." type="radio" />
+                                <span class="siteType__item__text">Есть фир.стиль</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="siteType__item">
+                        <img src="../imgs/second-2.png" alt="sitetype" class="requestSecond__img" />
+                        <div class="siteType__item__info">
+                            <label class="siteType__item__label">
+                                <input name="." type="radio" />
+                                <span class="siteType__item__text">Есть логотип</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="siteType__item">
+                        <img src="../imgs/second-3.png" alt="sitetype" class="requestSecond__img" />
+                        <div class="siteType__item__info">
+                            <label class="siteType__item__label">
+                                <input name="." type="radio" />
+                                <span class="siteType__item__text">Нет ничего</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="siteType__group">
+                    <button class="requestSecond__back">
+                        <i class="fa-solid fa-arrow-left"></i>
+                        <a href="#first">Назад</a>
+                    </button>
+                    <button class="siteType__btn">
+                        <a href="#thrid">Продолжить</a>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
             </div>
-            <div class="siteType__item">
-              <img
-                src="../imgs/first-2.png"
-                alt="sitetype"
-                class="siteType__item__img"
-              />
-              <div class="siteType__item__info">
-                <label class="siteType__item__label">
-                  <input name="." type="radio" />
-                  <span class="siteType__item__text">Многстраничный сайт</span>
-                </label>
-              </div>
-            </div>
-            <div class="siteType__item">
-              <img
-                src="../imgs/first-3.png"
-                alt="sitetype"
-                class="siteType__item__img"
-              />
-              <div class="siteType__item__info">
-                <label class="siteType__item__label">
-                  <input name="." type="radio" />
-                  <span class="siteType__item__text">Интернет-магазин</span>
-                </label>
-              </div>
-            </div>
-            <div class="siteType__item">
-              <img
-                src="../imgs/first-4.png"
-                alt="sitetype"
-                class="siteType__item__img"
-              />
-              <div class="siteType__item__info">
-                <label class="siteType__item__label">
-                  <input name="." type="radio" />
-                  <span class="siteType__item__text">Не уверен(-а)</span>
-                </label>
-              </div>
-            </div>
-          </div>
-          <button class="siteType__btn">
-            <a href="#second">Продолжить</a>
-            <i class="fa-solid fa-arrow-right"></i>
-          </button>
-        </div>
-      </section>
+        </section>
 
-      <section class="requestSecond" id="second">
-        <div class="container">
-          <h1 class="siteType__title">
-            Пройдите опрос из 6 вопросов и получите
-          </h1>
-          <p class="siteType__subtitle">
-            Стоимость и сроки разработки. Краткий анализ вашей компании и
-            рекомендации. План работ и маркетинговую стратегию.
-          </p>
-          <div class="siteType__test">
-            <div class="siteType__item">
-              <img
-                src="../imgs/second-1.png"
-                alt="sitetype"
-                class="requestSecond__img"
-              />
-              <div class="siteType__item__info">
-                <label class="siteType__item__label">
-                  <input name="." type="radio" />
-                  <span class="siteType__item__text">Есть фир.стиль</span>
-                </label>
-              </div>
+        <section class="requestSecond" id="thrid">
+            <div class="container">
+                <h1 class="siteType__title">
+                    Пройдите опрос из 6 вопросов и получите
+                </h1>
+                <p class="siteType__subtitle">
+                    Стоимость и сроки разработки. Краткий анализ вашей компании и
+                    рекомендации. План работ и маркетинговую стратегию.
+                </p>
+                <div class="siteType__test">
+                    <div class="siteType__item">
+                        <img src="../imgs/thrird-1.png" alt="sitetype" class="requestSecond__img" />
+                        <div class="siteType__item__info">
+                            <label class="siteType__item__label">
+                                <input name="." type="radio" />
+                                <span class="siteType__item__text">Сдержанно и консервативно</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="siteType__item">
+                        <img src="../imgs/thrird-2.png" alt="sitetype" class="requestSecond__img" />
+                        <div class="siteType__item__info">
+                            <label class="siteType__item__label">
+                                <input name="." type="radio" />
+                                <span class="siteType__item__text">Умеренный креатив, захватывающий внимание</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="siteType__item">
+                        <img src="../imgs/thrird-3.png" alt="sitetype" class="requestSecond__img" />
+                        <div class="siteType__item__info">
+                            <label class="siteType__item__label">
+                                <input name="." type="radio" />
+                                <span class="siteType__item__text">Смело, дерзко и ярко.</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="siteType__group">
+                    <button class="requestSecond__back">
+                        <i class="fa-solid fa-arrow-left"></i>
+                        <a href="#second">Назад</a>
+                    </button>
+                    <button class="siteType__btn">
+                        <a href="#fourth">Продолжить</a>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
             </div>
-            <div class="siteType__item">
-              <img
-                src="../imgs/second-2.png"
-                alt="sitetype"
-                class="requestSecond__img"
-              />
-              <div class="siteType__item__info">
-                <label class="siteType__item__label">
-                  <input name="." type="radio" />
-                  <span class="siteType__item__text">Есть логотип</span>
-                </label>
-              </div>
-            </div>
-            <div class="siteType__item">
-              <img
-                src="../imgs/second-3.png"
-                alt="sitetype"
-                class="requestSecond__img"
-              />
-              <div class="siteType__item__info">
-                <label class="siteType__item__label">
-                  <input name="." type="radio" />
-                  <span class="siteType__item__text">Нет ничего</span>
-                </label>
-              </div>
-            </div>
-          </div>
-          <div class="siteType__group">
-            <button class="requestSecond__back">
-              <i class="fa-solid fa-arrow-left"></i>
-              <a href="#first">Назад</a>
-            </button>
-            <button class="siteType__btn">
-              <a href="#thrid">Продолжить</a>
-              <i class="fa-solid fa-arrow-right"></i>
-            </button>
-          </div>
-        </div>
-      </section>
+        </section>
 
-      <section class="requestSecond" id="thrid">
-        <div class="container">
-          <h1 class="siteType__title">
-            Пройдите опрос из 6 вопросов и получите
-          </h1>
-          <p class="siteType__subtitle">
-            Стоимость и сроки разработки. Краткий анализ вашей компании и
-            рекомендации. План работ и маркетинговую стратегию.
-          </p>
-          <div class="siteType__test">
-            <div class="siteType__item">
-              <img
-                src="../imgs/thrird-1.png"
-                alt="sitetype"
-                class="requestSecond__img"
-              />
-              <div class="siteType__item__info">
-                <label class="siteType__item__label">
-                  <input name="." type="radio" />
-                  <span class="siteType__item__text"
-                    >Сдержанно и консервативно</span
-                  >
-                </label>
-              </div>
+        <section class="requestSecond" id="fourth">
+            <div class="container">
+                <h1 class="siteType__title">
+                    Пройдите опрос из 6 вопросов и получите
+                </h1>
+                <p class="siteType__subtitle">
+                    Стоимость и сроки разработки. Краткий анализ вашей компании и
+                    рекомендации. План работ и маркетинговую стратегию.
+                </p>
+                <div class="siteType__test">
+                    <div class="siteType__item">
+                        <img src="../imgs/fourth-1.png" alt="sitetype" class="requestSecond__img" />
+                        <div class="siteType__item__info">
+                            <label class="siteType__item__label">
+                                <input name="." type="radio" />
+                                <div class="siteType__item__text">
+                                    Заявки на почту, звонки на телфон. Яндекс метрика и
+                                    сертификат безопасности
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="siteType__item">
+                        <img src="../imgs/fourth-2.png" alt="sitetype" class="requestSecond__img" />
+                        <div class="siteType__item__info">
+                            <label class="siteType__item__label">
+                                <input name="." type="radio" />
+                                <div class="siteType__item__text">
+                                    с возможностью изменять контент и вести блог
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="siteType__item">
+                        <img src="../imgs/fourth-3.png" alt="sitetype" class="requestSecond__img" />
+                        <div class="siteType__item__info">
+                            <label class="siteType__item__label">
+                                <input name="." type="radio" />
+                                <div class="siteType__item__text">
+                                    + Интеграции калькуляторов, платежных систем, личный
+                                    кабинет, чаты, отзывы и др...
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="siteType__group">
+                    <button class="requestSecond__back">
+                        <i class="fa-solid fa-arrow-left"></i>
+                        <a href="#thrid">Назад</a>
+                    </button>
+                    <button class="siteType__btn">
+                        <a href="#fivth">Продолжить</a>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
             </div>
-            <div class="siteType__item">
-              <img
-                src="../imgs/thrird-2.png"
-                alt="sitetype"
-                class="requestSecond__img"
-              />
-              <div class="siteType__item__info">
-                <label class="siteType__item__label">
-                  <input name="." type="radio" />
-                  <span class="siteType__item__text"
-                    >Умеренный креатив, захватывающий внимание</span
-                  >
-                </label>
-              </div>
+        </section>
+
+        <section class="requestSecond" id="fivth">
+            <div class="container">
+                <h1 class="siteType__title">
+                    Пройдите опрос из 6 вопросов и получите
+                </h1>
+                <p class="siteType__subtitle">
+                    Стоимость и сроки разработки. Краткий анализ вашей компании и
+                    рекомендации. План работ и маркетинговую стратегию.
+                </p>
+
+                <form class="fivth__form">
+                    <input type="text" placeholder="Ccылка на сайт" class="fivth__form__inp" />
+                    <div class="fivth__form__grp">
+                        <label class="fivth__form__label">
+                            <p class="fivth__form__text">Есть</p>
+                            <input type="radio" name=".." />
+                        </label>
+                        <label class="fivth__form__label">
+                            <p class="fivth__form__text">Нет</p>
+                            <input type="radio" name=".." />
+                        </label>
+                    </div>
+                </form>
+
+                <div class="siteType__group">
+                    <button class="requestSecond__back">
+                        <i class="fa-solid fa-arrow-left"></i>
+                        <a href="#fourth">Назад</a>
+                    </button>
+                    <button class="siteType__btn">
+                        <a href="#sixth">Продолжить</a>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
             </div>
-            <div class="siteType__item">
-              <img
-                src="../imgs/thrird-3.png"
-                alt="sitetype"
-                class="requestSecond__img"
-              />
-              <div class="siteType__item__info">
-                <label class="siteType__item__label">
-                  <input name="." type="radio" />
-                  <span class="siteType__item__text"
-                    >Смело, дерзко и ярко.</span
-                  >
-                </label>
-              </div>
+        </section>
+
+        <section class="requestSecond" id="sixth">
+            <div class="container">
+                <h1 class="siteType__title">
+                    Пройдите опрос из 6 вопросов и получите
+                </h1>
+                <p class="siteType__subtitle">
+                    Стоимость и сроки разработки. Краткий анализ вашей компании и
+                    рекомендации. План работ и маркетинговую стратегию.
+                </p>
+
+                <form class="sixth__form" >
+                    <input type="text" placeholder="Имя" class="sixth__form__inp" required />
+                    <input type="text" placeholder="Телефон" class="fivth__form__num" required />
+                    <textarea required class="fivht__form__area"
+                        placeholder="Здесь могут быть ваши пожелания и комментарии..."></textarea>
+                    <div class="siteType__group" style="margin-top: -20px;">
+                        <button class="requestSecond__back">
+                            <i class="fa-solid fa-arrow-left"></i>
+                            <a href="#fivth">Назад</a>
+                        </button>
+                        <button class="siteType__btn" >
+                            <a href="#seventh">Продолжить</a>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </form>
             </div>
-          </div>
-          <div class="siteType__group">
-            <button class="requestSecond__back">
-              <i class="fa-solid fa-arrow-left"></i>
-              <a href="#second">Назад</a>
-            </button>
-            <button class="siteType__btn">
-              <a href="#fourth">Продолжить</a>
-              <i class="fa-solid fa-arrow-right"></i>
-            </button>
-          </div>
-        </div>
-      </section>
+        </section>
 
-      <section class="requestSecond" id="fourth">
-        <div class="container">
-          <h1 class="siteType__title">
-            Пройдите опрос из 6 вопросов и получите
-          </h1>
-          <p class="siteType__subtitle">
-            Стоимость и сроки разработки. Краткий анализ вашей компании и
-            рекомендации. План работ и маркетинговую стратегию.
-          </p>
-          <div class="siteType__test">
-            <div class="siteType__item">
-              <img
-                src="../imgs/fourth-1.png"
-                alt="sitetype"
-                class="requestSecond__img"
-              />
-              <div class="siteType__item__info">
-                <label class="siteType__item__label">
-                  <input name="." type="radio" />
-                  <div class="siteType__item__text">
-                    Заявки на почту, звонки на телфон. Яндекс метрика и
-                    сертификат безопасности
-                  </div>
-                </label>
-              </div>
+        <section class="requestSecond" id="seventh">
+            <div class="container">
+                <h1 class="siteType__title">
+                    Спасибо, что прошли наш квиз!
+                </h1>
+                <p class="siteType__subtitle">
+                    Наши менеджеры обработают вашу заявку и свяжуться с вами в ближайшее время
+                </p>
+                <button class="seventh__btn">
+                    <i class="fa-solid fa-arrow-left"></i><a href="../../index.html">Вернуться на главную</a>
+                </button>
             </div>
-            <div class="siteType__item">
-              <img
-                src="../imgs/fourth-2.png"
-                alt="sitetype"
-                class="requestSecond__img"
-              />
-              <div class="siteType__item__info">
-                <label class="siteType__item__label">
-                  <input name="." type="radio" />
-                  <div class="siteType__item__text">
-                    с возможностью изменять контент и вести блог
-                  </div>
-                </label>
-              </div>
-            </div>
-            <div class="siteType__item">
-              <img
-                src="../imgs/fourth-3.png"
-                alt="sitetype"
-                class="requestSecond__img"
-              />
-              <div class="siteType__item__info">
-                <label class="siteType__item__label">
-                  <input name="." type="radio" />
-                  <div class="siteType__item__text">
-                    + Интеграции калькуляторов, платежных систем, личный
-                    кабинет, чаты, отзывы и др...
-                  </div>
-                </label>
-              </div>
-            </div>
-          </div>
-          <div class="siteType__group">
-            <button class="requestSecond__back">
-              <i class="fa-solid fa-arrow-left"></i>
-              <a href="#thrid">Назад</a>
-            </button>
-            <button class="siteType__btn">
-              <a href="#fivth">Продолжить</a>
-              <i class="fa-solid fa-arrow-right"></i>
-            </button>
-          </div>
-        </div>
-      </section>
+        </section>
 
-      <section class="requestSecond" id="fivth">
-        <div class="container">
-          <h1 class="siteType__title">
-            Пройдите опрос из 6 вопросов и получите
-          </h1>
-          <p class="siteType__subtitle">
-            Стоимость и сроки разработки. Краткий анализ вашей компании и
-            рекомендации. План работ и маркетинговую стратегию.
-          </p>
-
-          <form class="fivth__form">
-            <input
-              type="text"
-              placeholder="Ccылка на сайт"
-              class="fivth__form__inp"
-            />
-            <div class="fivth__form__grp">
-              <label class="fivth__form__label"
-                ><p class="fivth__form__text">Есть</p>
-                <input type="radio" name=".."
-              /></label>
-              <label class="fivth__form__label"
-                ><p class="fivth__form__text">Нет</p>
-                <input type="radio" name=".."
-              /></label>
-            </div>
-          </form>
-
-          <div class="siteType__group">
-            <button class="requestSecond__back">
-              <i class="fa-solid fa-arrow-left"></i>
-              <a href="#fourth">Назад</a>
-            </button>
-            <button class="siteType__btn">
-              <a href="#sixth">Продолжить</a>
-              <i class="fa-solid fa-arrow-right"></i>
-            </button>
-          </div>
-        </div>
-      </section>
-
-      <section class="requestSecond" id="sixth">
-        <div class="container">
-          <h1 class="siteType__title">
-            Пройдите опрос из 6 вопросов и получите
-          </h1>
-          <p class="siteType__subtitle">
-            Стоимость и сроки разработки. Краткий анализ вашей компании и
-            рекомендации. План работ и маркетинговую стратегию.
-          </p>
-
-          <form class="sixth__form">
-            <input type="text" placeholder="Имя" class="sixth__form__inp" />
-            <input type="text" placeholder="Телефон" class="fivth__form__num" />
-            <textarea
-              class="fivht__form__area"
-              placeholder="Здесь могут быть ваши пожелания и комментарии..."
-            ></textarea>
-          </form>
-
-          <div class="siteType__group">
-            <button class="requestSecond__back">
-              <i class="fa-solid fa-arrow-left"></i>
-              <a href="#fivth">Назад</a>
-            </button>
-            <button class="siteType__btn">
-              <a href="#seventh">Продолжить</a>
-              <i class="fa-solid fa-arrow-right"></i>
-            </button>
-          </div>
-        </div>
-      </section>
     </main>
 
     <footer class="footer" style="position: fixed; width: 100%">
-      <div class="container">
-        <div class="footer__logo">
-          <img src="../imgs/logo.png" alt="footerLogo" class="footer__img" />
-          <p class="footer__logo__text">Digital агенство полного цикла</p>
+        <div class="container">
+            <div class="footer__logo">
+                <img src="../imgs/logo.png" alt="footerLogo" class="footer__img" />
+                <p class="footer__logo__text">Digital агенство полного цикла</p>
+            </div>
+            <div class="footer__text">
+                <p class="footer__text__item">
+                    © 1999-2020 Интернет-компания DidgiKey
+                </p>
+                <p class="footer__text__item">
+                    Информация на сайте не является публичной офертой
+                </p>
+                <p class="footer__text__item">
+                    Актуальные цены уточняйте у менеджеров
+                </p>
+            </div>
         </div>
-        <div class="footer__text">
-          <p class="footer__text__item">
-            © 1999-2020 Интернет-компания DidgiKey
-          </p>
-          <p class="footer__text__item">
-            Информация на сайте не является публичной офертой
-          </p>
-          <p class="footer__text__item">
-            Актуальные цены уточняйте у менеджеров
-          </p>
-        </div>
-      </div>
     </footer>
 
     <script src="../js/app.js"></script>
-  </body>
+</body>
+
 </html>

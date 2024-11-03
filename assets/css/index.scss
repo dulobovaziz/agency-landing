@@ -1,5 +1,7 @@
-@import "./__extra";
+@import "./_extra";
 @import "./_request";
+@import "./_portfolio";
+@import "./_marketing";
 
 @mixin btn($width, $heigh, $bg, $color, $border, $size, $radius) {
   width: $width;
@@ -80,10 +82,15 @@
 
   &__item {
     background: #fff;
-    box-shadow: 0 4px 50px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 50px rgba(225, 225, 225, 0.15);
     padding: 40px 0;
     width: 390px;
     text-align: center;
+    &:hover {
+      box-shadow: 0 4px 50px rgba(0, 0, 0, 0.15);
+      cursor: pointer;
+      transition: all .4s ease-in-out;
+    }
 
     &__list {
       margin: 20px 0;
@@ -196,6 +203,11 @@
     justify-content: center;
     align-items: center;
     background: #fff;
+    &:hover {
+      box-shadow: 0 4px 50px rgba(0, 0, 0, 0.15);
+      cursor: pointer;
+      transition: all .4s ease-in-out;
+    }
   }
 
   &__list {

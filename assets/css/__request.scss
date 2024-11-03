@@ -111,6 +111,7 @@
 .requestSecond {
     height: 100vh;
     display: flex;
+    padding-top: 100px;
 
     &__img {
         width: 200px;
@@ -157,9 +158,53 @@
 }
 
 .sixth__form {
-    background: red;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    & > input {
+        width: 413px;
+        height: 44px;
+        border-radius: 5px;
+        border: 1px solid rgba(233, 233, 233, 1);
+        outline: none;
+        font-size: 18px;
+        padding-left: 10px;
+    }
+    & > textarea {
+        width: 413px;
+        height: 110px;
+        max-width: 413px;
+        min-width: 413px;
+        max-height: 110px;
+        min-height: 70px;
+        font-size: 18px;
+        padding: 10px;
+        outline: none;
+        border: 1px solid rgba(233, 233, 233, 1);
+    }
 }
 
+.seventh__btn {
+    @include btn(320px, 56px, $primary, white, 2px solid $primary, 18px, 30px);
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    & > a, & > i {
+        color: white;
+    }
+    &:hover {
+        background: transparent;
+        transition: all .4s ease-out;
+        & a, & i {
+            color: $primary;
+        }
+    }
+    &:active {
+        transform: scale(1.1);
+        transition: all .4s ease-out;
+    }
+}
 // @mixin btn($width, $heigh, $bg, $color, $border, $size, $radius) {
 //     width: $width;
 //     height: $heigh;

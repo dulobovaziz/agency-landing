@@ -1,0 +1,98 @@
+@import "./_extra";
+
+@mixin btn($width, $heigh, $bg, $color, $border, $size, $radius) {
+    width: $width;
+    height: $heigh;
+    background: $bg;
+    color: $color;
+    border: $border;
+    font-size: $size;
+    border-radius: $radius;
+}
+
+.tabs {
+    text-align: center;
+    border-bottom: 2px solid $text;
+
+    &__list {
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+        gap: 30px;
+        margin: 20px 0;
+
+        &__item {
+            font-size: 20px;
+            border-bottom: 1px dashed $text;
+            cursor: pointer;
+
+            &:hover {
+                color: $primary;
+                transition: all 0.3s;
+            }
+        }
+    }
+}
+
+.project {
+    padding: 50px 0;
+
+    &>.container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        &__img {
+            width: 700px;
+        }
+        &__name {
+            font-size: 17px;
+            color: $text;
+            line-height: 14px;
+            font-weight: 700;
+        }
+        &__title {
+            font-size: 37px;
+            font-weight: 800;
+        }
+        &__btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            
+            &> i {
+                color: white
+            }
+            @include btn(217px, 56px, $primary, white, 2px solid $primary, 18px, 30px);
+            &:hover {
+                color: $primary;
+                background: transparent;
+                transition: all .3s;
+            }
+            &:hover i {
+                color: $primary;
+            }
+            &:active {
+                transform: scale(1.1);
+                transition: all .3s ease-in-out;
+            }
+        }
+    }
+}
+
+
+// @mixin btn($width, $heigh, $bg, $color, $border, $size, $radius) {
+//     width: $width;
+//     height: $heigh;
+//     background: $bg;
+//     color: $color;
+//     border: $border;
+//     font-size: $size;
+//     border-radius: $radius;
+// }
