@@ -63,6 +63,10 @@ button {
     height: 85px;
     align-items: center;
 
+    &__logo {
+        cursor: pointer;
+    }
+
     &__menu {
         display: flex;
         align-items: center;
@@ -79,7 +83,9 @@ button {
         background-size: cover;
         display: none;
         width: 100%;
-        background: $secondary;
+        overflow: hidden;
+        background-image: url(../imgs/menu-bg.png), linear-gradient(white,white);
+        background-size: cover;
         z-index: 10;
         height: 100vh;
         position: absolute;
@@ -89,6 +95,10 @@ button {
             height: 80px;
             align-items: center;
             justify-content: space-between;
+
+            &__img {
+                cursor: pointer;
+            }
 
             &__menu {
                 color: white;

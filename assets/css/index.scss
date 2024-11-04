@@ -86,6 +86,7 @@
     padding: 40px 0;
     width: 390px;
     text-align: center;
+
     &:hover {
       box-shadow: 0 4px 50px rgba(0, 0, 0, 0.15);
       cursor: pointer;
@@ -203,6 +204,7 @@
     justify-content: center;
     align-items: center;
     background: #fff;
+
     &:hover {
       box-shadow: 0 4px 50px rgba(0, 0, 0, 0.15);
       cursor: pointer;
@@ -323,23 +325,26 @@
         2px solid $primary,
         16px,
         30px);
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        justify-content: center;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      justify-content: center;
 
       &>i {
         color: white;
         font-size: 20px;
       }
+
       &:hover {
         color: $text;
         background: transparent;
         transition: all .3s ease-out;
       }
+
       &:hover .projects__info__icon {
         color: $text;
       }
+
       &:active {
         transform: scale(1.1);
         transition: all .3s ease-out;
@@ -348,12 +353,90 @@
   }
 }
 
-// @mixin btn($width, $heigh, $bg, $color, $border, $size, $radius) {
-//   width: $width;
-//   height: $heigh;
-//   background: $bg;
-//   color: $color;
-//   border: $border;
-//   font-size: $size;
-//   border-radius: $radius;
-// }
+@media only screen and (max-width: 480px) {
+  .container {
+    width: 96% !important;
+  }
+
+  .sidenav {
+    width: 100%;
+  }
+
+  .hero {
+    padding: 150px 0 50px 0;
+    align-items: start;
+
+    &__info {
+      &__title {
+        font-size: 40px;
+        width: 100%;
+        font-weight: bold;
+      }
+
+      &__subtitle {
+        width: 100% !important;
+      }
+
+      &__text {
+        width: 100% !important;
+      }
+    }
+
+    &__img {
+      width: 150px;
+      position: relative;
+      top: 0;
+      margin-top: -130px;
+    }
+  }
+
+  .services {
+    &__list {
+      display: block;
+    }
+
+    &__item {
+      margin: 10px 0;
+      width: 96%;
+    }
+  }
+
+  .portfolio {
+    &__nav {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+
+      &__list {
+        display: flex !important;
+        flex-direction: column;
+        margin-top: 10px;
+      }
+    }
+    &__hero {
+      display: block;
+      &__info {
+        width: 100% !important;
+      }
+      &__img {
+        width: 350px;
+        margin-top: 30px;
+        margin-left: -60px;
+      }
+    }
+  }
+  .clients {
+    &__item:not(:first-child) {
+      display: none;
+      width: 100% !important;
+      margin: 0 auto;
+    }
+    &__list {
+      width: 100% !important;
+      justify-content: center;
+    }
+  }
+  .apps {
+    display: none;
+  }
+}
