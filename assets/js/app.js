@@ -3,7 +3,6 @@ const openBtn = document.querySelector("#sidenavOpenBtn"),
 let  menu = document.querySelector("#menu"),
     nav = document.querySelector("#nav");
 
-
 openBtn.addEventListener("click", () => {
     menu.style.display = "block";
     nav.style.position = "absolute"
