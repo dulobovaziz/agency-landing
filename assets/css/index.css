@@ -160,10 +160,9 @@ button {
     flex-direction: column;
   }
   .footer__text {
-    margin: 10px 0;
+    margin: 5px 0;
     text-align: center;
     display: flex;
-    gap: 10px;
   }
   .sidenav__left {
     height: 100vh !important;
@@ -334,10 +333,9 @@ button {
     flex-direction: column;
   }
   .footer__text {
-    margin: 10px 0;
+    margin: 5px 0;
     text-align: center;
     display: flex;
-    gap: 10px;
   }
   .sidenav__left {
     height: 100vh !important;
@@ -562,6 +560,42 @@ button {
   transition: all 0.4s ease-out;
 }
 
+@media only screen and (max-width: 480px) {
+  .request__hero {
+    align-items: start;
+    padding-top: 150px;
+  }
+  #second {
+    padding-top: -10px;
+  }
+  .siteType {
+    align-items: start;
+  }
+  .siteType__test {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .siteType__item {
+    width: 30%;
+  }
+  .siteType__title {
+    width: 100% !important;
+    font-size: 30px;
+  }
+  .siteType__subtitle {
+    width: 100%;
+    font-size: 16px;
+  }
+  .siteType__btn {
+    width: 170px;
+  }
+  .requestSecond__img {
+    width: 80%;
+  }
+  #fourth > .siteType__item__label {
+    display: none !important;
+  }
+}
 @font-face {
   font-family: Montserrat;
   src: url(../fonts/Montserrat-Bold.woff);
@@ -724,10 +758,9 @@ button {
     flex-direction: column;
   }
   .footer__text {
-    margin: 10px 0;
+    margin: 5px 0;
     text-align: center;
     display: flex;
-    gap: 10px;
   }
   .sidenav__left {
     height: 100vh !important;
@@ -1001,10 +1034,9 @@ button {
     flex-direction: column;
   }
   .footer__text {
-    margin: 10px 0;
+    margin: 5px 0;
     text-align: center;
     display: flex;
-    gap: 10px;
   }
   .sidenav__left {
     height: 100vh !important;

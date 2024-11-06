@@ -1,216 +1,251 @@
 @import "./__extra";
 
 @mixin btn($width, $heigh, $bg, $color, $border, $size, $radius) {
-    width: $width;
-    height: $heigh;
-    background: $bg;
-    color: $color;
-    border: $border;
-    font-size: $size;
-    border-radius: $radius;
-  }
+  width: $width;
+  height: $heigh;
+  background: $bg;
+  color: $color;
+  border: $border;
+  font-size: $size;
+  border-radius: $radius;
+}
 
 .request__hero {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    & > .request__main {
-        text-align: center;
-    }
-    &__title {
-        font-size: 58px;
-        font-weight: bold;
-    }
-    &__subtitle {
-        font-size: 28px;
-    }
-    &__person {
-        font-size: 18px;
-    }
-    &__location {
-        font-size: 18px;
-        margin-top: 10px;
-    }
-    &__btn {
-        @include btn(250px, 56px, $primary, white, 2px solid $primary,  18px, 30px);
-        margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 
-        & > a {
-            color: white;
-        }
+  & > .request__main {
+    text-align: center;
+  }
+  &__title {
+    font-size: 58px;
+    font-weight: bold;
+  }
+  &__subtitle {
+    font-size: 28px;
+  }
+  &__person {
+    font-size: 18px;
+  }
+  &__location {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  &__btn {
+    @include btn(250px, 56px, $primary, white, 2px solid $primary, 18px, 30px);
+    margin-top: 10px;
 
-        &:hover {
-            background: transparent;
-            & .request__hero__link {
-                color: $primary;
-            }
-        }
-        &:active {
-            transform: scale(1.1);
-            transition: all .4s ease-out;
-        }
+    & > a {
+      color: white;
     }
+
+    &:hover {
+      background: transparent;
+      & .request__hero__link {
+        color: $primary;
+      }
+    }
+    &:active {
+      transform: scale(1.1);
+      transition: all 0.4s ease-out;
+    }
+  }
 }
 .siteType {
-    height: 100vh;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__test {
     display: flex;
-    justify-content: center;
-    align-items: center;
-
-    &__test {
-        display: flex;
-        gap: 50px;
-
-    }
-    &__title {
-        font-size: 36px;
-        width: 45%;
-    }
-    &__subtitle {
-        font-size: 18px;
-        color: rgba(119, 123, 135, 1);
-        width: 65%;
-        margin: 20px 0;
-    }
-    &__item {
-        gap: 10px;
-        display: flex;
-        flex-direction: column;
-
-        &__img {
-            width: 82px;
-
-        }
-        &__label {
-            margin-top: -10px;
-            display: flex;
-            gap: 10px;
-            width: 250px;
-        }
-    }
-    &__btn {
-        @include btn(236px, 56px, $primary, white, 2px solid $primary, 18px, 30px);
-        margin-top: 10px;
-        & > i, & > a {
-            color: white;
-        }
-        &:hover {
-            background: transparent;
-            & a, & i {
-                color: $primary;
-            }
-            &:active {
-                transform: scale(1.1);
-                transition: all .4s ease-out;
-            }
-        }
-    }
-
-}
-.requestSecond {
-    height: 100vh;
+    gap: 50px;
+  }
+  &__title {
+    font-size: 36px;
+    width: 45%;
+  }
+  &__subtitle {
+    font-size: 18px;
+    color: rgba(119, 123, 135, 1);
+    width: 65%;
+    margin: 20px 0;
+  }
+  &__item {
+    gap: 10px;
     display: flex;
-    padding-top: 100px;
+    flex-direction: column;
 
     &__img {
-        width: 200px;
-    }
-    &__back {
-        @include btn(180px, 56px, transparent, $text, 2px solid $text, 18px, 30px);
-        &:hover {
-            background: $text;
-            & a, & i {
-                color: white;
-            }
-        }
-        &:active {
-            transform: scale(1.1);
-            transition: all .4s ease-out;
-        }
-    }
-}
-.fivth__form {
-    &__grp {
-        display: flex;
-        gap: 15px;
-        margin-top: 10px;
+      width: 82px;
     }
     &__label {
-        display: flex;
-        gap: 10px;
+      margin-top: -10px;
+      display: flex;
+      gap: 10px;
+      width: 250px;
     }
-    &__text {
-        font-size: 17px;
+  }
+  &__btn {
+    @include btn(236px, 56px, $primary, white, 2px solid $primary, 18px, 30px);
+    margin-top: 10px;
+    & > i,
+    & > a {
+      color: white;
     }
-    &__inp {
-        padding-left: 10px;
-        background: rgba(233, 233, 233, 1);
-        border: 1px solid gray;
-        border-radius: 5px;
-        width: 286px;
-        height: 48px;
-        outline: none;
-        &::placeholder {
-            font-size: 18px;
-        }
+    &:hover {
+      background: transparent;
+      & a,
+      & i {
+        color: $primary;
+      }
+      &:active {
+        transform: scale(1.1);
+        transition: all 0.4s ease-out;
+      }
     }
+  }
+}
+.requestSecond {
+  height: 100vh;
+  display: flex;
+  padding-top: 100px;
+
+  &__img {
+    width: 200px;
+  }
+  &__back {
+    @include btn(180px, 56px, transparent, $text, 2px solid $text, 18px, 30px);
+    &:hover {
+      background: $text;
+      & a,
+      & i {
+        color: white;
+      }
+    }
+    &:active {
+      transform: scale(1.1);
+      transition: all 0.4s ease-out;
+    }
+  }
+}
+.fivth__form {
+  &__grp {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  &__label {
+    display: flex;
+    gap: 10px;
+  }
+  &__text {
+    font-size: 17px;
+  }
+  &__inp {
+    padding-left: 10px;
+    background: rgba(233, 233, 233, 1);
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 286px;
+    height: 48px;
+    outline: none;
+    &::placeholder {
+      font-size: 18px;
+    }
+  }
 }
 
 .sixth__form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    & > input {
-        width: 413px;
-        height: 44px;
-        border-radius: 5px;
-        border: 1px solid rgba(233, 233, 233, 1);
-        outline: none;
-        font-size: 18px;
-        padding-left: 10px;
-    }
-    & > textarea {
-        width: 413px;
-        height: 110px;
-        max-width: 413px;
-        min-width: 413px;
-        max-height: 110px;
-        min-height: 70px;
-        font-size: 18px;
-        padding: 10px;
-        outline: none;
-        border: 1px solid rgba(233, 233, 233, 1);
-    }
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  & > input {
+    width: 413px;
+    height: 44px;
+    border-radius: 5px;
+    border: 1px solid rgba(233, 233, 233, 1);
+    outline: none;
+    font-size: 18px;
+    padding-left: 10px;
+  }
+  & > textarea {
+    width: 413px;
+    height: 110px;
+    max-width: 413px;
+    min-width: 413px;
+    max-height: 110px;
+    min-height: 70px;
+    font-size: 18px;
+    padding: 10px;
+    outline: none;
+    border: 1px solid rgba(233, 233, 233, 1);
+  }
 }
 
 .seventh__btn {
-    @include btn(320px, 56px, $primary, white, 2px solid $primary, 18px, 30px);
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
-    & > a, & > i {
-        color: white;
+  @include btn(320px, 56px, $primary, white, 2px solid $primary, 18px, 30px);
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  & > a,
+  & > i {
+    color: white;
+  }
+  &:hover {
+    background: transparent;
+    transition: all 0.4s ease-out;
+    & a,
+    & i {
+      color: $primary;
     }
-    &:hover {
-        background: transparent;
-        transition: all .4s ease-out;
-        & a, & i {
-            color: $primary;
-        }
-    }
-    &:active {
-        transform: scale(1.1);
-        transition: all .4s ease-out;
-    }
+  }
+  &:active {
+    transform: scale(1.1);
+    transition: all 0.4s ease-out;
+  }
 }
-// @mixin btn($width, $heigh, $bg, $color, $border, $size, $radius) {
-//     width: $width;
-//     height: $heigh;
-//     background: $bg;
-//     color: $color;
-//     border: $border;
-//     font-size: $size;
-//     border-radius: $radius;
-//   }
+
+@media only screen and (max-width: 480px) {
+  .request__hero {
+    align-items: start;
+    padding-top: 150px;
+  }
+  #second {
+    padding-top: -10px;
+  }
+  .siteType {
+    align-items: start;
+
+    &__test {
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+    &__item {
+      width: 30%;
+    }
+
+    &__title {
+      width: 100% !important;
+      font-size: 30px;
+    }
+    &__subtitle {
+      width: 100%;
+      font-size: 16px;
+    }
+    &__btn {
+      width: 170px;
+    }
+  }
+  .requestSecond {
+    &__img {
+      width: 80%;
+    }
+  }
+  #fourth > .siteType__item__label {
+    display: none !important;
+  }
+}
